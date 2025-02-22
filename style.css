@@ -45,6 +45,7 @@ nav {
 }
 
 #nav-part2 {
+  height: 70px;
   display: flex;
   align-items: center;
   gap: 25px;
@@ -61,7 +62,7 @@ nav {
 }
 
 #nav2 {
-  height: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
   gap: 80px;
@@ -72,4 +73,58 @@ nav {
   font-size: 14px;
   font-weight: 600;
   color: rgb(79, 76, 76);
+}
+
+#content {
+  height: calc(100% - 160px);
+}
+
+#text-content {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar {
+  background-color: transparent;
+  height: 7px;
+}
+
+#text-content::-webkit-scrollbar-thumb {
+  background-color: orangered;
+}
+
+.elem {
+  height: 100%;
+  width: 50%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elem h1 {
+  font-size: 110px;
+  font-weight: 500;
+}
+
+#image-content {
+  height: 55%;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+#image-content::-webkit-scrollbar {
+  display: none;
+}
+
+#image-content img {
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
