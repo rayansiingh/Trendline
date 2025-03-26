@@ -1,0 +1,1 @@
+1. text-content::-webkit-scrollba
